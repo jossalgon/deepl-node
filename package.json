@@ -1,0 +1,25 @@
+{
+  "name": "deepl-node",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jossalgon/deepl-node.git"
+  },
+  "keywords": [
+    "deepL"
+  ],
+  "author": "Jose L. SALAZAR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jossalgon/deepl-node/issues"
+  },
+  "homepage": "https://github.com/jossalgon/deepl-node#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
