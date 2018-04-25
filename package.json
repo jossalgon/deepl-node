@@ -1,6 +1,6 @@
 {
   "name": "deepl-node",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,6 @@
   "homepage": "https://github.com/jossalgon/deepl-node#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "deepl-translator": "^1.2.0"
+    "deepl-translator": "https://github.com/jossalgon/deepl-translator"
   }
 }

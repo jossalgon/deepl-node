@@ -67,7 +67,7 @@ module.exports = class Deepl {
   translate(...params) {
     let cb = params.pop();
     if (this.use_alternative) {
-      alternative.translate(params[0], params[2].toUpperCase(), params[1].toUpperCase()).then((res) => {
+      alternative.translate(params[0], params[1].toUpperCase(), params[2].toUpperCase()).then((res) => {
         cb(undefined, res.translation);
       })
       .catch(err => this._sendRequest(params, cb));
