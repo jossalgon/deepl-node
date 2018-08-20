@@ -38,7 +38,7 @@ module.exports = class Deepl {
   */
   _request(text, target_lang=this.target_lang, source_lang=this.source_lang, tag_handling=this.tag_handling, split_sentences=this.split_sentences, preserve_formatting=this.preserve_formatting) {
     let url = `${HOST}/${VERSION}/translate?auth_key=${this.auth_key}&text=${text}&target_lang=${target_lang}&source_lang=${source_lang}&tag_handling=${tag_handling}&split_sentences=${split_sentences}&preserve_formatting=${preserve_formatting}`.replace(/&\w+=undefined/g, '');
-    return axios.get(url);
+    return axios.get(encodeURI(url));
   }
 
   _sendRequest(params, cb) {
